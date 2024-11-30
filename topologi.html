@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JENIS JARINGAN</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+                box-sizing: border-box;
+            } /*prevent text getting cut because the scroll bar...*/
+            
+            body {
+                background:linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0)), url("topolog.jpeg");
+                margin: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial;
+                font-size: 17px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+                margin-left: 1%;
+            }
+
+            /*link*/
+            a:link {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:aqua;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            .menu {
+                align-items: center;
+                position: fixed;
+                top:0;
+                background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu a.split {
+                float: right;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(18, 8, 72, 0.9));
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 30px;
+                margin-top: 5%;
+                margin-left: 1%;
+            }
+
+            .desc {
+                margin-right: 35%;
+            }
+
+            img{
+                border-radius: 20px;
+            }
+
+            .toplog {
+                margin-top: -86%;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="istilah.html">Istilah</a>
+            <a href="materi.html">Materi</a>
+            <a href="tentangkami.html" class="split">Tentang Kami</a>
+        </div>
+
+        <div class="title">
+            <h1>Jenis Jaringan Komputer berdasarkan Topologi</h1>
+        </div>
+        
+    <img src="hybrid.jpg" width="410" height="250" align="right">
+    <div class="desc">
+        <ol>
+            <li><b>Topologi Bus</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Semua perangkat dihubungkan ke satu kabel utama atau "bus".
+                    Data yang dikirimkan oleh satu perangkat disebarkan ke semua perangkat lain di
+                    jaringan melalui kabel utama ini.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Mudah diimplementasikan dan membutuhkan sedikit kabel.</li>
+                        <li>Biaya instalasi rendah.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Jika kabel utama mengalami kerusakan, seluruh jaringan akan terputus.</li>
+                        <li>Sulit untuk mendeteksi kesalahan.</li>
+                    </ul>
+            </ul>
+            
+            <li><b>Topologi Star</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Semua perangkat terhubung ke satu titik pusat, seperti hub atau
+                    switch. Data dari satu perangkat harus melalui perangkat pusat sebelum mencapai
+                    perangkat lain.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Mudah untuk menambahkan atau menghapus perangkat tanpa mengganggu jaringan lain.</li>
+                        <li>Jika satu perangkat gagal, tidak mempengaruhi perangkat lain.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Jika hub atau switch pusat mengalami kerusakan, seluruh jaringan akan terpengaruh.</li>
+                        <li>Membutuhkan lebih banyak kabel daripada topologi bus.</li>
+                    </ul>
+            </ul>
+
+            <li><b>Topologi Ring</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Setiap perangkat dihubungkan ke dua perangkat lain, membentuk
+                    lingkaran. Data mengalir dalam satu arah (atau dua arah dalam beberapa konfigurasi)
+                    di sepanjang lingkaran.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Data mengalir dengan cepat karena jalur data tetap.</li>
+                        <li>Pengelolaan dan diagnosa kesalahan lebih mudah.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Jika satu perangkat atau koneksi mengalami kerusakan, seluruh jaringan dapat terganggu.</li>
+                        <li>Sulit untuk mengkonfigurasi dan memelihara.</li>
+                    </ul>
+            </ul>
+
+            <li><b>Topologi Mesh</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Setiap perangkat dihubungkan ke dua perangkat lain, membentuk
+                    lingkaran. Data mengalir dalam satu arah (atau dua arah dalam beberapa konfigurasi)
+                    di sepanjang lingkaran.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Data mengalir dengan cepat karena jalur data tetap.</li>
+                        <li>Pengelolaan dan diagnosa kesalahan lebih mudah.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Mahal dan kompleks untuk diimplementasikan karena membutuhkan banyak kabel dan koneksi.</li>
+                        <li>Konfigurasi dan pemeliharaan yang rumit.</li>
+                    </ul>
+            </ul>
+
+            <li><b>Topologi Tree</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Kombinasi dari beberapa topologi star yang dihubungkan ke bus.
+                    Menciptakan struktur hierarkis yang memungkinkan jaringan yang lebih besar untuk diatur.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Skalabilitas yang baik dan mudah diperluas.</li>
+                        <li>Deteksi dan isolasi kesalahan lebih mudah.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Kompleksitas konfigurasi dan pemeliharaan.</li>
+                        <li>Jika kabel utama bus mengalami kerusakan, bagian dari jaringan dapat terpengaruh.</li>
+                    </ul>
+            </ul>
+
+            <li><b>Topologi Hybrid</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Kombinasi dari dua atau lebih topologi jaringan yang berbeda untuk
+                    memenuhi kebutuhan spesifik. Misalnya, menggabungkan topologi star dan mesh.</li>
+                <li><b>Keuntungan</b>:
+                    <ul>
+                        <li>Fleksibilitas tinggi untuk merancang jaringan sesuai kebutuhan.</li>
+                        <li>Memanfaatkan kelebihan dari berbagai topologi.</li>
+                    </ul></li>
+                <li><b>Kelemahan</b>:</li>
+                    <ul>
+                        <li>Kompleksitas instalasi dan pemeliharaan meningkat.</li>
+                        <li>Biaya bisa lebih tinggi karena menggunakan berbagai jenis topologi.</li>
+                    </ul>
+            </ul>
+        </ol>
+    </div>
+
+    <div class="toplog">
+        <img src="toplog.jpg" width="410" height="300" align="right">
+    </div>
+
+    </body>
+</html>

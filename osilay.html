@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7 OSI LAYER</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+                box-sizing: border-box;
+            } /*prevent text getting cut because the scroll bar...*/
+            
+            body {
+                background:linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0)), url("osilay.png");
+                margin: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial;
+                font-size: 17px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+            }
+
+            /*link*/
+            a:link {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:aqua;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            .menu {
+                align-items: center;
+                position: fixed;
+                top:0;
+                background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu a.split {
+                float: right;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(18, 8, 72, 0.9));
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 30px;
+                margin-top: 75px;
+                margin-left: 1%;
+            }
+
+            .osi {
+                margin-top: 5px;
+            }
+
+            .desc {
+                margin-left: 1%;
+                margin-right: 30%;
+            }
+
+            h1{
+                margin-left: 1%;
+            }
+
+            p{
+                margin-left: 1%;
+            }
+
+            table{
+                margin-left: 1%;
+            }
+
+            img{
+                border-radius: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="istilah.html">Istilah</a>
+            <a href="materi.html">Materi</a>
+            <a href="tentangkami.html" class="split">Tentang Kami</a>
+        </div>
+
+        <div class="title">
+            <h1>OSI LAYER</h1>
+        </div>
+
+    <p><b>𖤐Apa itu "OSI Layer"?</b></p>
+    
+    <div class="osi">
+        <img src="osi.png" width="400" height="400" align="right">
+    </div>
+
+    <div class="desc">
+        <ul>
+            <li>Model referensi OSI (Open System Interconnection) menggambarkan bagaimana Model referensi OS 
+                (Open System) berpindah melewati sebuah media jaringan ke suatu software aplikasi di komputer lain.</li>
+            <li>Badan dunia yang menangani masalah standarisasi ISO (International Standardization Organization)
+                membuat satuan baku yang dikenal dengan nama model referensi OSI (Open System Interconnection).</li>
+            <li>Model tujus lapis OSI (OSI seven layer mode) adalah vendor perangkat telekomunikasi yang harus
+                berpedoman dengan model referensi ini dalam mengembangkan protokolnya.</li>
+        </ul><br>
+
+        <p><b>𖤐Keuntungan OSI Layer</b></p>
+        <ul>
+            <li>Memberikan bahasa dan referensi yang sama antar sesama professional jaringan</li>
+            <li>Memberikan bahasa dan referan ke dalam layer-layer logis demi kemudahan dalam pemahaman</li>
+            <li>Membagi tugas-tugas jaringan ke dalam layer-layer logis demi kemudahan dalam pemahaman</li>
+            <li>Memberikan keleluasaan fitur-fitur khusus pada level-level yang berbeda</li>
+            <li>Memudahkan dalam troubleshooting</li>
+            <li>Mendorong standard interoperability antar jaringan dan piranti</li>
+            <li>Memberikan modularity dalam fitur-fitur jaringan (developer dapat mengubah fitur-fitur tanpa
+                mengubah dengan cara pendekatan keseluruhan)</li>
+        </ul><br>
+
+        <p><b>𖤐Kerugian OSI Layer</b></p>
+        <ul>
+            <li>Layer-2 OSI adalah teoritis dan tidak melakukan fungsi-2 yang sesungguhnya</li>
+            <li>Dalam implementasi industry jarang sekali mempunyai hubungan layer-ke-layer</li>
+            <li>Protocol-2 yang berbeda dalam stack melakukan fungsi-2 yang berbeda yang membantu
+                menerima dan mengirim data pesan secara keseluruhan</li>
+            <li>Implementasi suatu protocol tertentu bisa tidak mewakili setiap layer OSI
+                (atau bisa tersebar di beberapa layer)</li>
+        </ul>
+    </div>
+
+   <br>
+    <p>Model referensi OSI terdiri dari 7 lapisan, mulai dari lapisan fisik sampai dengan aplikasi yaitu
+        sebagai berikut:</p>
+        
+        <table style="width: 80%;" border="2">
+            <tr>
+                <th>Lapisan ke-</th>
+                <th>Nama Lapisan</th>
+                <th>Keterangan</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Physical Layer</td>
+                <td>Menentukan media transmisi jaringan, pensinyalan, sinkronisasi bit, serta arsitektur
+                    dan topologi jaringan. Menyediakan interaksi antara perangkat keras seperti Network
+                    Interface Card (NIC).</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Data-link Layer</td>
+                <td>Mengelompokkan bit menjadi frame, menangani koreksi kesalahan, kontrol aliran, dan
+                    pengalamatan perangkat keras (MAC Address). Beroperasi dengan perangkat seperti hub,
+                    bridge, dan switch.</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Network Layer</td>
+                <td>Mendefinisikan alamat IP, membuat header untuk paket, dan melakukan routing melalui
+                    jaringan menggunakan router dan switch.</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Transport Layer</td>
+                <td>Memecah data ke dalam paket, memberi nomer urut paket sehingga dapat disusun Kembali
+                    pada sisi tujuan setelah diterima. Level ini juga membuat tanda bahwa pake diterima
+                    dengan sukses dan mentransmisikan ulang terhadap paket-paket yang hilang.</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Session Layer</td>
+                <td>Mendefinisikan bagaimana koneksi dapat dibuat, dipelihara, atau dihancurkan.
+                    Level ini dilakukan resolusi nama.</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Presentation Layer</td>
+                <td>Mentranslasikan data oleh aplikasi ke dalam format yang dapat ditransmisikan melalui
+                    jaringan. Protokol : Redirector software (seperti layanan Workstation dalam windows NT).
+                    </td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Application Layer</td>
+                <td>Menyediakan antarmuka untuk aplikasi agar dapat mengakses jaringan dan membuat pesan
+                    kesalahan. Protokol : HTTP, FTP, SMTP, dan NFS.</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MATERI</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            * {
+                box-sizing: border-box;
+            } /*prevent text getting cut because the scroll bar...*/
+            
+            body {
+                background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("jrkom2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+            }
+
+            /*link*/
+            a:link {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:aqua;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            .menu {
+                align-items: center;
+                position: fixed;
+                top:0;
+                background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu a.split {
+                float: right;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(18, 8, 72, 0.9));
+                padding: 10px;
+            }
+
+            .mat {
+                margin-top: 5%;
+                font-size: 30px;
+            }
+
+            .guru {
+                margin-top: -15%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="istilah.html">Istilah</a>
+            <a href="materi.html">Materi</a>
+            <a href="tentangkami.html" class="split">Tentang Kami</a>
+        </div>
+
+        <div class="mat">
+            <h1>Materi</h1>
+        </div>
+
+        <table border="2">
+            <tr>
+                <th>Nomor</th>
+                <th>Materi</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jaringan Komputer</td>
+                <td> <a href="fact.html">Fakta Menarik</a>, <a href="sejarah.html">Sejarah</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Internet dan Intranet</td>
+                <td> <a href="intraernet.html"> Internet dan Intranet</a>, <a href="sejintraernet.html">Sejarah Internet</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>OSI Layer</td>
+                <td> <a href="osilay.html">7 Lapisan OSI, Keuntungan dan Kerugian</a></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Jenis Jaringan Komputer</td>
+                <td><a href="geografis.html">Secara geografis</a>, <a href="fungsi.html">fungsi</a>,
+                    <a href="topologi.html">topologi</a>, dan <a href="medtrans.html">media transmisi</a></td>
+            </tr>
+        </table>
+
+        <div class="guru">
+            <img src="guru.png" width="400" height="400" align="right">
+        </div>
+    </body>
+</html>

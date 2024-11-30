@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JENIS JARINGAN</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+                box-sizing: border-box;
+            } /*prevent text getting cut because the scroll bar...*/
+            
+            body {
+                background:linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0)), url("vpnwall.jpg");
+                margin: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial;
+                font-size: 17px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+                margin-left: 1%;
+            }
+
+            /*link*/
+            a:link {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:aqua;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            .menu {
+                align-items: center;
+                position: fixed;
+                top:0;
+                background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu a.split {
+                float: right;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(18, 8, 72, 0.9));
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 30px;
+                margin-top: 5%;
+                margin-left: 1%;
+            }
+
+            .desc {
+                margin-right: 35%;
+            }
+
+            img{
+                border-radius: 20px;
+            }
+
+            .p2p {
+                margin-top: -77%;
+            }
+
+            .vpn{
+                margin-top: 27%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="istilah.html">Istilah</a>
+            <a href="materi.html">Materi</a>
+            <a href="tentangkami.html" class="split">Tentang Kami</a>
+        </div>
+
+        <div class="title">
+            <h1>Jenis Jaringan Komputer berdasarkan Fungsinya</h1>
+        </div>
+        
+    <img src="clinsver.jpg" width="410" height="250" align="right">
+    <div class="desc">
+        <ol>
+            <li><b>Client-Server Network</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Dalam jaringan ini, ada satu atau lebih komputer server yang
+                    menyediakan layanan atau sumber daya kepada komputer klien.</li>
+                <li><b>Fungsi</b>:
+                    <ul>
+                        <li><i>Server</i>: bertanggung jawab atas manajemen data, aplikasi, dan layanan lainnya.</li>
+                        <li><i>Klien</i>: mengakses dan menggunakan layanan yang disediakan oleh server.</li>
+                    </ul></li>
+                <li><b>Contoh</b>: Jaringan di kantor di mana server menyediakan file sharing, email, dan
+                    database.
+                    </li>
+            </ul>
+            
+            <li><b>Peer-to-Peer</b> (P2P)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Semua komputer dalam jaringan ini dianggap setara dan berbagi sumber
+                    daya secara langsung satu sama lain tanpa server pusat.</li>
+                <li><b>Fungsi</b>:
+                <ul>
+                    <li>Setiap komputer dapat bertindak sebagai klien dan server.</li>
+                    <li>Berbagi file dan printer secara langsung antar pengguna.</li>
+                </ul></li>
+                <li><b>Contoh</b>: Jaringan rumah sederhana di mana beberapa komputer berbagi file dan printer.</li>
+            </ul>
+
+            <li><b>Distributed Network</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan di mana tugas-tugas pemrosesan dan penyimpanan data
+                    didistribusikan di beberapa komputer yang saling terhubung.</li>
+                <li><b>Fungsi</b>:
+                    <ul>
+                        <li>Mendukung komputasi terdistribusi untuk meningkatkan kinerja dan keandalan.</li>
+                        <li>Memungkinkan pembagian beban kerja dan penggunaan sumber daya yang lebih efisien.</li>
+                    </ul></li>
+                <li><b>Contoh</b>: Jaringan pengolahan data besar seperti jaringan penambangan kripto.</li>
+            </ul>
+
+            <li><b>VPN</b> (Virtual Private Network)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang menggunakan internet untuk menghubungkan komputer atau
+                    jaringan yang terpisah secara geografis melalui koneksi yang aman dan terenkripsi.</li>
+                    <li><b>Fungsi</b>:
+                        <ul>
+                            <li>Menyediakan koneksi aman untuk transmisi data antara lokasi yang berbeda.</li>
+                            <li>Mengizinkan akses jarak jauh ke jaringan perusahaan secara aman.</li>
+                        </ul></li>
+                <li><b>Contoh</b>: Karyawan perusahaan yang bekerja dari rumah mengakses jaringan perusahaan
+                    melalui VPN.</li>
+            </ul>
+
+            <li><b>Intranet</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan internal yang menggunakan teknologi dan protokol internet,
+                    namun hanya dapat diakses oleh pengguna dalam organisasi tertentu.</li>
+                    <li><b>Fungsi</b>:
+                        <ul>
+                            <li>Berbagi informasi dan sumber daya secara internal dalam organisasi.</li>
+                            <li>Meningkatkan komunikasi dan kolaborasi di dalam organisasi.</li>
+                        </ul></li>
+                <li><b>Contoh</b>: Jaringan perusahaan yang menyediakan akses ke aplikasi bisnis internal,
+                    email, dan dokumen perusahaan.</li>
+            </ul>
+
+            <li><b>Extranet</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Ekstensi dari jaringan intranet yang memungkinkan akses terbatas dari
+                    pihak luar, seperti pelanggan atau mitra bisnis.</li>
+                    <li><b>Fungsi</b>:
+                        <ul>
+                            <li>Memungkinkan kolaborasi dan berbagi informasi dengan pihak luar yang
+                                memiliki izin.</li>
+                            <li>Meningkatkan efisiensi bisnis dengan mitra eksternal.</li>
+                        </ul></li>
+                <li><b>Contoh</b>: Portal pelanggan perusahaan yang memberikan akses ke layanan, produk,
+                    dan informasi.</li>
+
+            <li><b>SAN</b>(Storage Area Network)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang didedikasikan untuk menghubungkan dan mengelola
+                    perangkat penyimpanan data.</li>
+                    <li><b>Fungsi</b>:
+                        <ul>
+                            <li>Memungkinkan akses cepat dan andal ke data yang disimpan di berbagai
+                                perangkat penyimpanan.</li>
+                            <li>Meningkatkan efisiensi dan keandalan manajemen data.</li>
+                        </ul></li>
+                <li><b>Contoh</b>: Jaringan penyimpanan data perusahaan yang digunakan untuk database
+                    besar dan aplikasi bisnis kritis.</li>
+            </ul>
+        </ol>
+    </div>
+
+    <div class="p2p">
+        <img src="p2p.jpg" width="410" height="300" align="right">
+    </div>
+
+    <div class="vpn">
+        <img src="vpn.png" width="410" height="300" align="right">
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JENIS JARINGAN</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+                box-sizing: border-box;
+            } /*prevent text getting cut because the scroll bar...*/
+            
+            body {
+                background:linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0)), url("wifi.jpg");
+                margin: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: Arial;
+                font-size: 17px;
+                background-color: black;
+                font-family: Verdana;
+                color: white;
+            }
+
+            /*link*/
+            a:link {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color:aqua;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            .menu {
+                align-items: center;
+                position: fixed;
+                top:0;
+                background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu a.split {
+                float: right;
+                background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(18, 8, 72, 0.9));
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 30px;
+                margin-top: 5%;
+                margin-left: 1%;
+            }
+
+            .desc {
+                margin-right: 35%;
+            }
+
+            img{
+                border-radius: 20px;
+            }
+
+            .satelit {
+                margin-top: -810px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="istilah.html">Istilah</a>
+            <a href="materi.html">Materi</a>
+            <a href="tentangkami.html" class="split">Tentang Kami</a>
+        </div>
+
+        <div class="title">
+            <h1>Jenis Jaringan Komputer berdasarkan Media Transmisi</h1>
+        </div>
+        
+    <img src="plc.png" width="410" height="250" align="right">
+    
+    <div class="desc">
+        <ol>
+            <li><b>Jaringan Berkabel</b> (Wired Network)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang menggunakan kabel fisik untuk mentransmisikan data
+                    antara perangkat.</li>
+                <li><b>Ethernet</b>: Menggunakan kabel tembaga seperti twisted pair (misalnya, kabel Cat5,
+                    Cat6) atau kabel koaksial untuk menghubungkan perangkat dalam jaringan.</li>
+                    <ul>
+                        <li><b>Keuntungan</b>: Stabilitas dan kecepatan data yang tinggi, keamanan yang
+                            lebih baik karena tidak mudah terganggu oleh interferensi.</li>
+                        <li><b>Kelemahan</b>: Instalasi bisa lebih rumit dan membutuhkan lebih banyak
+                            kabel, kurang fleksibel karena perangkat harus terhubung secara fisik.</li>
+                    </ul>
+                <li><b>Fiber Optik</b>: Menggunakan serat kaca atau plastik untuk mentransmisikan data
+                    dalam bentuk cahaya. Biasanya digunakan untuk jaringan dengan kebutuhan kecepatan
+                    tinggi dan jarak jauh.</li>
+                    <ul>
+                        <li><b>Keuntungan</b>: Kecepatan data yang sangat tinggi, jarak transmisi yang
+                            panjang, tahan terhadap interferensi elektromagnetik.</li>
+                        <li><b>Kelemahan</b>: Biaya instalasi yang lebih tinggi dibandingkan kabel tembaga,
+                            instalasi dan perawatan yang lebih kompleks.</li>
+                    </ul></li>
+            </ul>
+            
+            <li><b>Jaringan Nirkabel</b> (Wireless Network)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang menggunakan gelombang radio atau inframerah untuk
+                    mentransmisikan data antara perangkat tanpa kabel fisik.</li>
+                <li><b>Wi-Fi</b> (Wireless Fidelity): Menggunakan gelombang radio untuk menghubungkan
+                    perangkat dalam jarak tertentu melalui access point atau router.</li>
+                <ul>
+                    <li><b>Keuntungan</b>: Fleksibel dan mudah diinstal, memungkinkan mobilitas perangkat 
+                        yang tinggi.</li>
+                   <li><b>Kelemahan</b>: Rentan terhadap interferensi, jarak transmisi terbatas, keamanan 
+                    yang lebih rentan terhadap serangan.</li>
+                </ul>
+                <li><b>Bluetooth</b>: Teknologi nirkabel untuk komunikasi jarak pendek antara perangkat 
+                    seperti ponsel, komputer, dan perangkat IoT.
+                    <ul>
+                        <li><b>Keuntungan</b>: Konsumsi daya yang rendah, ideal untuk koneksi perangkat 
+                            personal.</li>
+                        <li><b>Kelemahan</b>: Jarak transmisi sangat terbatas (biasanya sekitar 10 meter), 
+                            kecepatan transfer data yang relatif rendah.</li>
+                    </ul></li>
+                <li><b>Infrared</b>: Menggunakan sinar inframerah untuk transmisi data, biasanya digunakan 
+                    untuk remote control dan komunikasi antara perangkat dalam jarak sangat dekat.
+                    <ul>
+                        <li><b>Keuntungan</b>: Tidak terganggu oleh interferensi elektromagnetik.</li>
+                        <li><b>Kelemahan</b>: Jarak transmisi sangat pendek, harus dalam garis pandang 
+                            langsung (line of sight).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <li><b>Jaringan Power Line Communication</b> (PLC)</li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang menggunakan kabel listrik yang sudah ada untuk 
+                    mentransmisikan data. Menggunakan jaringan kabel listrik untuk mengirimkan data.</li>
+                <li><b>Keuntungan</b>: Menggunakan infrastruktur yang sudah ada, mengurangi kebutuhan untuk 
+                    menarik kabel tambahan.</li>
+                <li><b>Kelemahan</b>: Rentan terhadap interferensi dari perangkat listrik lain, kecepatan 
+                    dan stabilitas bisa dipengaruhi oleh kualitas jaringan listrik.</li>
+            </ul>
+
+            <li><b>Jaringan Satelit</b></li>
+            <ul>
+                <li><b>Deskripsi</b>: Jaringan yang menggunakan satelit untuk mentransmisikan data, cocok 
+                    untuk daerah-daerah terpencil yang tidak terjangkau oleh infrastruktur kabel atau 
+                    jaringan seluler.</li>
+                <li><b>Keuntungan</b>: Cakupan geografis yang sangat luas, dapat mencapai daerah-daerah 
+                    terpencil.</li>
+                <li><b>Kelemahan</b>: Biaya tinggi, latensi (delay) yang lebih tinggi dibandingkan jaringan 
+                    berbasis darat.</li>
+            </ul>
+        </ol>
+    </div>
+
+    <div class="satelit">
+        <img src="satelit.png" width="410" height="300" align="right">
+    </div>
+
+    </body>
+</html>
